@@ -1,13 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Image,  ScrollView, Heading, Text, Box, HStack, Spacer, Button } from "native-base";
+import { Image,  ScrollView, Heading, Text, Box, HStack, Spacer } from "native-base";
 import Colors from '../data/Colors';
 import Rating from '../componenst/Rating';
-import NumericInput from 'react-native-numeric-input';
 import Buttone from '../componenst/Buttone';
 import Review from '../componenst/Review';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from "@react-navigation/native";
-import { ToastAndroid } from 'react-native';
+import { StyleSheet, ToastAndroid } from 'react-native';
 
 
 
@@ -55,7 +54,7 @@ function DetailsProductScreen({ route }) {
 
 
     return (
-        <Box safeArea flex={1} bg={Colors.white}>
+        <Box safeArea flex={1} style={styles.bg}>
             <ScrollView px={5} showsVerticalScrollIndicator={false}>
                 <Image
                     source={{ uri: product.image }}
@@ -100,3 +99,9 @@ function DetailsProductScreen({ route }) {
 }
 
 export default DetailsProductScreen;
+
+const styles = StyleSheet.create({
+  bg:{
+    backgroundColor:"#ffffff",
+  }
+})

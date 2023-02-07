@@ -174,7 +174,7 @@ export default function SearchTest() {
             <AnimatedTextInput
             value={input}
             onChangeText={(text) => setInput(text)}
-            placeholder='Search Name'
+            placeholder='Search Product'
             placeholderTextColor='rgba(255,225,255,0.8)'
             style={[styles.searchInput, searchInputAnimetion]}
             />
@@ -274,7 +274,7 @@ const styles = StyleSheet.create({
     header:{
         position:"absolute",
         width:"100%",
-        backgroundColor:"#AF0C6E"
+        backgroundColor:"#530caf"
     },
     upperHeader:{
         height:UPPER_HEADER_HEIGHT,
@@ -340,6 +340,6 @@ const styles = StyleSheet.create({
         height:LOWER_HEADER_HEIGHT
     },
     scrollViewContent:{
-        backgroundColor:"#eea2db",
+        backgroundColor:"#87aee2",
     },
 })

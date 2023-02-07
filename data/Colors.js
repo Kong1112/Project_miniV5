@@ -12,6 +12,7 @@ const Colors = {
     forestGreen:"#228B22",
     cyan:"#00FFFF",
     lightSkyBlue:"#87CEFA",
+    subblue:"#87aee2",
     
 };
 
